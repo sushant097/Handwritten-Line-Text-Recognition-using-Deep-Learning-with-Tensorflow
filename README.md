@@ -12,7 +12,8 @@ Special Thanks for the [SimpleHTR](https://github.com/githubharald/SimpleHTR) an
 ![Step_wise_detail](images/Step_wise_detail_of_workflow.png?raw=true "Step_Wise Detail")
 * First Use Convolutional Recurrent Neural Network to extract the important features from the handwritten line text Image.
 * The output before CNN FC layer (512x100x8) is passed to the BLSTM which is for sequence dependency and time-sequence operations.
-* Then CTC LOSS [Alex Graves](https://www.cs.toronto.edu/~graves/icml_2006.pdf) is used to train the RNN which eliminate the Alignment problem in Handwritten, since handwritten have different alignment of every writers. We just gave the what is written in the image (Ground Truth Text) and BLSTM output, then it calculates loss simply as -log("gtText"); aim to minimize negative maximum likelihood path.See [this](https://distill.pub/2017/ctc/) for detail. Finally CTC finds out the possible paths from the given labels. Loss is given by for (X,Y) pair is: ![Ctc_Loss](images/CtcLossFormula.png?raw=true "CTC loss for the (X,Y) pair")
+* Then CTC LOSS [Alex Graves](https://www.cs.toronto.edu/~graves/icml_2006.pdf) is used to train the RNN which eliminate the Alignment problem in Handwritten, since handwritten have different alignment of every writers. We just gave the what is written in the image (Ground Truth Text) and BLSTM output, then it calculates loss simply as -log("gtText"); aim to minimize negative maximum likelihood path.See [this](https://distill.pub/2017/ctc/) for detail. 
+* Finally CTC finds out the possible paths from the given labels. Loss is given by for (X,Y) pair is: ![Ctc_Loss](images/CtcLossFormula.png?raw=true "CTC loss for the (X,Y) pair")
 * Finally CTC Decode is used to decode the output during Prediction.
 </i>
 
