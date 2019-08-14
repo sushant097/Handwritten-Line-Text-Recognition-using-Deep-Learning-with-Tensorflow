@@ -52,10 +52,10 @@ $ python main.py
 Run in Web with Flask
 ```markdown
 $ python upload.py
-Validation character error rate of saved model: 3.320037%
-Python: 3.6.4 |Anaconda, Inc.| (default, Mar 12 2018, 20:20:50) [MSC v.1900 64 bit (AMD64)]
+Validation character error rate of saved model: 8.654728%
+Python: 3.6.4 
 Tensorflow: 1.8.0
-Init with stored values from ../model/snapshot-2
+Init with stored values from ../model/snapshot-24
 Without Correction clothed leaf by leaf with the dioappoistmest
 With Correction clothed leaf by leaf with the dioappoistmest
 ```
