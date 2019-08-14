@@ -63,6 +63,8 @@ With Correction clothed leaf by leaf with the dioappoistmest
 
 **Prediction output on Self Test Data**
 ![PredictionOutput](images/PredictionOutput.png?raw=true "Prediction Output on Self Data")
+
+** The Validation character error rate of saved model: 8.654728%**
 # Further Improvement
 * Line segementation can be added for full paragraph text recognition
 * Better Image preprocessing to handle real time image.
