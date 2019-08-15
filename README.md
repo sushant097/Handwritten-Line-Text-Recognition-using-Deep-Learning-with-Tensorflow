@@ -2,7 +2,7 @@
 ### Description
 Use Convolutional Recurrent Neural Network to recognize the Handwritten line text image without pre segmentation into words or characters. Use CTC loss Function to train.
 
-Special Thanks for the [SimpleHTR](https://github.com/githubharald/SimpleHTR) and [Lamhoangtung](https://github.com/lamhoangtung/LineHTR) for the great contribution.
+Special Thanks for the [Lamhoangtung](https://github.com/lamhoangtung/LineHTR) for the great contribution.
 
 ### Why Deep Learning?
 ![Why Deep Learning](images/WhyDeepLearning.png?raw=true "Why Deep Learning")
