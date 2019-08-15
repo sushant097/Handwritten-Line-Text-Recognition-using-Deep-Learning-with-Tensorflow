@@ -17,15 +17,16 @@ Special Thanks for the [SimpleHTR](https://github.com/githubharald/SimpleHTR) an
 * Finally CTC Decode is used to decode the output during Prediction.
 </i>
 
+
+#### Detail Project Workflow
+![Architecture of Model](images/ArchitectureDetails.png?raw=true "Model Architecture")
+
 # Requirements
 1. Tensorflow 1.8.0
 2. Flask
 3. Numpy
 4. OpenCv 3
 5. Spell Checker `autocorrect` >=0.3.0 ``pip install autocorrect``
-
-#### Detail Project Workflow
-![Architecture of Model](images/ArchitectureDetails.png?raw=true "Model Architecture")
 
 #### Dataset Used
 * IAM dataset download from [here](http://www.fki.inf.unibe.ch/databases/iam-handwriting-database)
