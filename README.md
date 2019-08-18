@@ -72,9 +72,6 @@ With Correction clothed leaf by leaf with the dioappoistmest
 **Prediction output on Self Test Data**
 ![PredictionOutput](images/PredictionOutput.png?raw=true "Prediction Output on Self Data")
 
-
-###### You can find trained model to download from [here.](https://drive.google.com/open?id=10HHNZPqPQZCQCLrKGQOq5E7zFW5wGcA4) Download and extract all files inside the `model/` directory.
-
 # Further Improvement
 * Line segementation can be added for full paragraph text recognition
 * Better Image preprocessing to handle real time image.
