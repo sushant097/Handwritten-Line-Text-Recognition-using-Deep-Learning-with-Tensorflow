@@ -2,7 +2,7 @@
 ### Description
 Use Convolutional Recurrent Neural Network to recognize the Handwritten line text image without pre segmentation into words or characters. Use CTC loss Function to train.
 
-Special Thanks for the [Line HTR](https://github.com/lamhoangtung/LineHTR) and [@Harald Scheidl](https://github.com/githubharald) for their work.
+Special Thanks for the [Line HTR](https://github.com/lamhoangtung/LineHTR)  work.
 ### Why Deep Learning?
 ![Why Deep Learning](images/WhyDeepLearning.png?raw=true "Why Deep Learning")
 > Deep Learning self extracts features with a deep neural networks and classify itself. Compare to traditional Algorithms it performance increase with Amount of Data.
@@ -39,6 +39,7 @@ Special Thanks for the [Line HTR](https://github.com/lamhoangtung/LineHTR) and [
 * Place the downloaded files inside data directory  
 
 ##### The Validation character error rate obtain : 8.654728% i.e around 92 % accuracy
+###### You can find trained model to download from [here.](https://drive.google.com/open?id=10HHNZPqPQZCQCLrKGQOq5E7zFW5wGcA4) Download and extract all files inside the `model/` directory.
 
 
 
@@ -69,12 +70,10 @@ With Correction clothed leaf by leaf with the dioappoistmest
 **Prediction output on IAM Test Data**
 ![PredictionOutput](images/IAM_dataset_Prediction_Output.png?raw=true "Prediction Output On Iam Dataset")
 
-**Prediction output on Self Test Data**
-![PredictionOutput](images/PredictionOutput.png?raw=true "Prediction Output on Self Data")
 
 # Further Improvement
-* Line segementation can be added for full paragraph text recognition
+* Line segementation can be added for full paragraph text recognition.
 * Better Image preprocessing to handle real time image.
 * Better Decoding approach to improve accuracy. Some of the CTC Decoder found [here](https://github.com/githubharald/CTCDecoder)  
 * More variety of data for real time recognition.
-* Data Augmentation essential to improve accuracy.
+* Data Augmentation essential to improve accuracy like random distortion on images.
