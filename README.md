@@ -2,7 +2,7 @@
 ### Description
 Use Convolutional Recurrent Neural Network to recognize the Handwritten line text image without pre segmentation into words or characters. Use CTC loss Function to train.
 
-Special Thanks for the [Line HTR](https://github.com/lamhoangtung/LineHTR)  work.
+Special Thanks for the [Line HTR](https://github.com/lamhoangtung/LineHTR)  work for vietnam handwritten recognition.
 ### Why Deep Learning?
 ![Why Deep Learning](images/WhyDeepLearning.png?raw=true "Why Deep Learning")
 > Deep Learning self extracts features with a deep neural networks and classify itself. Compare to traditional Algorithms it performance increase with Amount of Data.
@@ -70,10 +70,12 @@ With Correction clothed leaf by leaf with the dioappoistmest
 **Prediction output on IAM Test Data**
 ![PredictionOutput](images/IAM_dataset_Prediction_Output.png?raw=true "Prediction Output On Iam Dataset")
 
+**Prediction output on Self Test Data**
+![PredictionOutput](images/PredictionOutput.png?raw=true "Prediction Output on Self Data")
 
 # Further Improvement
 * Line segementation can be added for full paragraph text recognition.
-* Better Image preprocessing to handle real time image.
+* Better Image preprocessing such as: reduce backgoround noise to handle real time image more accurately.
 * Better Decoding approach to improve accuracy. Some of the CTC Decoder found [here](https://github.com/githubharald/CTCDecoder)  
-* More variety of data for real time recognition.
-* Data Augmentation essential to improve accuracy like random distortion on images.
+
+*This is part of my last semester project of Computer Science Program From Tribhuvan University. July 2019*
