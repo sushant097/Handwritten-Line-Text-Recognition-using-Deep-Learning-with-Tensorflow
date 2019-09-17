@@ -2,7 +2,6 @@
 ### Description
 Use Convolutional Recurrent Neural Network to recognize the Handwritten line text image without pre segmentation into words or characters. Use CTC loss Function to train.
 
-Special Thanks for the [Line HTR](https://github.com/lamhoangtung/LineHTR)  work for vietnam handwritten recognition.
 ### Why Deep Learning?
 ![Why Deep Learning](images/WhyDeepLearning.png?raw=true "Why Deep Learning")
 > Deep Learning self extracts features with a deep neural networks and classify itself. Compare to traditional Algorithms it performance increase with Amount of Data.
