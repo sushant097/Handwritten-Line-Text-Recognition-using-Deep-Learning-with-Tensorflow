@@ -37,9 +37,7 @@ Use Convolutional Recurrent Neural Network to recognize the Handwritten line tex
 * Only needed the lines images and lines.txt (ASCII).
 * Place the downloaded files inside data directory  
 
-##### The Validation character error rate obtain : 8.654728% i.e around 92 % accuracy
-###### You can find trained model to download from [here.](https://drive.google.com/open?id=10HHNZPqPQZCQCLrKGQOq5E7zFW5wGcA4) Download and extract all files inside the `model/` directory.
-
+###### The Trained model is not available right now. You can trained it by yourself.
 
 
 To Train the model from scratch
