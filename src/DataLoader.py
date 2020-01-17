@@ -75,7 +75,7 @@ class DataLoader:
                        lineSplit[0] + '.png'
 
             # GT text are columns starting at 10
-            gtText_list = lineSplit[9].split('|')
+            gtText_list = lineSplit[8].split('|')
             gtText = self.truncateLabel(' '.join(gtText_list), maxTextLen)
             chars = chars.union(set(list(gtText)))  ## taking the unique characters present
 
