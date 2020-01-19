@@ -75,6 +75,7 @@ class DataLoader:
                        lineSplit[0] + '.png'
 
             # GT text are columns starting at 10
+            # see the lines.txt and check where the GT text starts, in this case it is 10
             gtText_list = lineSplit[9].split('|')
             gtText = self.truncateLabel(' '.join(gtText_list), maxTextLen)
             chars = chars.union(set(list(gtText)))  ## taking the unique characters present
@@ -93,7 +94,7 @@ class DataLoader:
             print("Warning, damaged images found:", bad_samples)
             print("Damaged images expected:", bad_samples_reference)
 
-        # split into training and validation set: 90% - 10%
+        # split into training and validation set: 95% - 10%
         splitIdx = int(0.95 * len(self.samples))
         self.trainSamples = self.samples[:splitIdx]
         self.validationSamples = self.samples[splitIdx:]
@@ -130,7 +131,7 @@ class DataLoader:
         "switch to randomly chosen subset of training set"
         self.dataAugmentation = True
         self.currIdx = 0
-        #random.shuffle(self.trainSamples)
+        random.shuffle(self.trainSamples) # shuffle the samples in each epoch
         self.samples = self.trainSamples #[:self.numTrainSamplesPerEpoch]
 
     def validationSet(self):
