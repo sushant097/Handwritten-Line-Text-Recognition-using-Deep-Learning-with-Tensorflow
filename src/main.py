@@ -21,7 +21,7 @@ def train(model, loader):
     earlyStopping = 25  # Stop training after this number of epochs without improvement
     batchNum = 0
 
-    totalEpoch = loader.trainSamples//Model.batchSize # loader.numTrainSamplesPerEpoch
+    totalEpoch = len(loader.trainSamples)//Model.batchSize 
 
     while True:
         epoch += 1
