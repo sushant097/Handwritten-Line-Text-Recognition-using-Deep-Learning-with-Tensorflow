@@ -25,7 +25,7 @@ def preprocessor(img, imgSize, enhance=False, dataAugmentation=False):
         pxmin = np.min(img)
         pxmax = np.max(img)
         imgContrast = (img - pxmin) / (pxmax - pxmin) * 255
-        # increase line width
+        # increase line width (optional)
         kernel = np.ones((3, 3), np.uint8)
         img = cv2.erode(imgContrast, kernel, iterations=1) # increase linewidth
 
@@ -37,7 +37,8 @@ def preprocessor(img, imgSize, enhance=False, dataAugmentation=False):
     f = max(fx, fy)
     newSize = (max(min(wt, int(w / f)), 1),
                max(min(ht, int(h / f)), 1))  # scale according to f (result at least 1 and at most wt or ht)
-    img = cv2.resize(img, newSize)
+    img = cv2.resize(img, newSize, interpolation=cv2.INTER_CUBIC) # INTER_CUBIC interpolation best approximate the pixels image
+                                                                  # see this https://stackoverflow.com/a/57503843/7338066
     target = np.ones([ht, wt]) * 255  # shape=(64,800)
     target[0:newSize[1], 0:newSize[0]] = img
 
