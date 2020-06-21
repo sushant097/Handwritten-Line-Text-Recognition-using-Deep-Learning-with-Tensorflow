@@ -17,8 +17,8 @@ class DecoderType:
 class Model:
     # Model Constants
     batchSize = 10 # 50
-    imgSize = (800, 64)
-    maxTextLen = 100
+    imgSize = (800, 64) 
+    maxTextLen = 100 # maximum text length can be reccognized
 
     def __init__(self, charList, decoderType=DecoderType.BestPath, mustRestore=False):
         self.charList = charList
@@ -218,12 +218,12 @@ class Model:
         # Go over all texts
         for (batchElement, texts) in enumerate(texts):
             # Convert to string of label (i.e. class-ids)
-            # print(texts)
-            # labelStr = []
-            # for c in texts:
-            #     print(c, '|', end='')
-            #     labelStr.append(self.charList.index(c))
-            # print(' ')
+            print(texts)
+            labelStr = []
+            for c in texts:
+                 print(c, '|', end='')
+                 labelStr.append(self.charList.index(c))
+            print(' ')
             labelStr = [self.charList.index(c) for c in texts]
             # Sparse tensor must have size of max. label-string
             if len(labelStr) > shape[1]:
@@ -263,8 +263,9 @@ class Model:
     def trainBatch(self, batch, batchNum):
         """ Feed a batch into the NN to train it """
         sparse = self.toSpare(batch.gtTexts)
-        rate = 0.01 if self.batchesTrained < 10 else (
-            0.001 if self.batchesTrained < 2750 else 0.001)
+        rate = 0.001 # if you use the pretrained model to continue train
+        #rate = 0.01 if self.batchesTrained < 10 else (
+        #    0.001 if self.batchesTrained < 2750 else 0.001) # variable learning_rate is used from trained from scratch
         evalList = [self.merge, self.optimizer, self.loss]
         feedDict = {self.inputImgs: batch.imgs, self.gtTexts: sparse, self.seqLen: [Model.maxTextLen] * Model.batchSize, self.learningRate: rate}
         (loss_summary, _, lossVal) = self.sess.run(evalList, feedDict)
