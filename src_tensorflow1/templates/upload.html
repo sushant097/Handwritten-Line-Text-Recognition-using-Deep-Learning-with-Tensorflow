@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Upload</title>
+ <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/jumbotron.css') }}">
+
+</head>
+<body>
+
+<div class="container" id="outer">
+        {% include "logo_include.html" %}
+    <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" class="active"><a href="#">Home</a></li>
+            <li role="presentation"><a href="#">About</a></li>
+            <li role="presentation"><a href="#">Contact</a></li>
+          </ul>
+
+        </nav>
+        <h3 class="text-muted">Handwritten Line Text Recognition</h3>
+
+    </div>
+    <form id="upload-form" action="{{ url_for('upload') }}" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="file-picker">File Input</label><br>
+                <input id="file-picker" type="file" name="file" accept="image/*" multiple>
+                <p class="help-block">Supported Image are '.png', 'jpg'</p>
+                <div id="msg" style="color: blue;font-size: 20px"></div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsPrediction" id="withoutLM" value="bestPath" checked>
+                    Only use Best Path Decoding &mdash;fast prediction but not be accurate
+                  </label>
+                </div>
+                <button type="submit" value="Upload" id="upload-button" class="btn btn-primary">Submit</button>
+            </div>
+
+        </form>
+
+
+
+</div>
+
+</body>
+<script>
+    $("#file-picker").change(function(){
+        var input = document.getElementById('file-picker');
+        for (var i=0; i<input.files.length; i++)
+        {
+        //koala.jpg, koala.JPG substring(index) lastIndexOf('a') koala.1.jpg
+            var ext= input.files[i].name.substring(input.files[i].name.lastIndexOf('.')+1).toLowerCase()
+            if ((ext == 'jpg') || (ext == 'png'))
+            {
+                $("#outer #msg").text("Files are supported")
+            }
+            else
+            {
+                $("#outer #msg").text("Files are NOT supported")
+                document.getElementById("file-picker").value ="";
+            }
+        }
+    } );
+</script>
+
+<footer>
+    <script src="{{url_for('static', filename='js/jquery.js')}}"></script>
+    <script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+</footer>
+</html>
