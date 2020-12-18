@@ -1,6 +1,7 @@
 # Handwritten Line Text Recognition using Deep Learning with Tensorflow
 ### Description
 Use Convolutional Recurrent Neural Network to recognize the Handwritten line text image without pre segmentation into words or characters. Use CTC loss Function to train.
+More read this [Medium Post](https://susant.medium.com/learn-and-use-handwritten-line-text-recognition-using-deep-learning-with-tensorflow-b661434b5e3b?source=friends_link&sk=f22713a4c39f144ee26acf9a31d757af)
 
 ### Why Deep Learning?
 ![Why Deep Learning](images/WhyDeepLearning.png?raw=true "Why Deep Learning")
