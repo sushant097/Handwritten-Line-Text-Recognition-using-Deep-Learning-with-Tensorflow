@@ -27,7 +27,7 @@ More read this [Medium Post](https://susant.medium.com/learn-and-use-handwritten
 ![DetailModelArchitecture](images/DetailModelArchitecture.png?raw=true "DetailModelArchitecture")
 
 # Requirements
-1. Tensorflow 1.8.0
+1. Tensorflow 1.8.0 ; You can upgrade to Tensorflow v2 with this [link](https://www.tensorflow.org/guide/upgrade)
 2. Flask
 3. Numpy
 4. OpenCv 3
