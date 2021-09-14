@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HomePage</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/jumbotron.css') }}">
+
+</head>
+</head>
+<body>
+
+<div class="container-fluid">
+    {% include "logo_include.html" %}
+
+    <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" class="active"><a href="#">Home</a></li>
+            <li role="presentation"><a href="#">About</a></li>
+            <li role="presentation"><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">Handwritten Line Text Recognition</h3>
+    </div>
+    <div class="jumbotron">
+        <h1>Handwritten Text Recognition</h1>
+        <p class="lead">Input the Handwritten Text here as file upload and convert into digital text.
+                        The Paragraph Line Segmentation Module and components will soon publish</p>
+                <p><a class="btn btn-lg btn-success" href="upload_page" role="button">Check Demo Here!</a></p>
+
+    </div>
+</div>
+
+<footer>
+    <script src="{{url_for('static', filename='js/jquery.js')}}"></script>
+    <script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+</footer>
+</body>
+</html>
