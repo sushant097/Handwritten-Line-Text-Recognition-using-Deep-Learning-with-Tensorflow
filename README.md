@@ -1,4 +1,12 @@
 # Handwritten Line Text Recognition using Deep Learning with Tensorflow
+![GitHub stars](https://img.shields.io/github/stars/sushant097/Handwritten-Line-Text-Recognition-using-Deep-Learning-with-Tensorflow) 
+![GitHub forks](https://img.shields.io/github/forks/sushant097/Handwritten-Line-Text-Recognition-using-Deep-Learning-with-Tensorflow)
+[![Maintenance](https://img.shields.io/badge/maintained-yes-green.svg)](https://github.com/sushant097/sushant097.github.io//commits/master)
+[![Website shields.io](https://img.shields.io/badge/website-up-yellow)](https://github.com/sushant097/Handwritten-Line-Text-Recognition-using-Deep-Learning-with-Tensorflow)
+[![Ask Me Anything !](https://img.shields.io/badge/ask%20me-linkedin-1abc9c.svg)](https://www.linkedin.com/in/susan-gautam/)
+[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
+
+
 ### Description
 Use Convolutional Recurrent Neural Network to recognize the Handwritten line text image without pre segmentation into words or characters. Use CTC loss Function to train.
 More read this [Medium Post](https://susant.medium.com/learn-and-use-handwritten-line-text-recognition-using-deep-learning-with-tensorflow-b661434b5e3b?source=friends_link&sk=f22713a4c39f144ee26acf9a31d757af)
@@ -81,4 +89,4 @@ With Correction clothed leaf by leaf with the dioappoistmest
 Feel Free to improve this project with pull Request.
 
 
-*This is part of my last semester project of Computer Engineering From Tribhuvan University. July 2019*
+*This is a work of my last semester project in Computer Engineering at Tribhuvan University. In July of 2019,*
