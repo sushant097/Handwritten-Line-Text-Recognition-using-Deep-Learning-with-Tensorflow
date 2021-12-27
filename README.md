@@ -46,7 +46,7 @@ More read this [Medium Post](https://susant.medium.com/learn-and-use-handwritten
 * Only needed the lines images and lines.txt (ASCII).
 * Place the downloaded files inside data directory  
 
-###### The Trained model is available and download from this [link](https://drive.google.com/file/d/10HHNZPqPQZCQCLrKGQOq5E7zFW5wGcA4/view?usp=sharing). The trained model CER=8.32% and trained on IAM dataset with some additional created dataset.
+###### The Trained model is available and download from this [link](https://drive.google.com/file/d/10HHNZPqPQZCQCLrKGQOq5E7zFW5wGcA4/view?usp=sharing). The trained model available have CER=8.32% and trained on IAM dataset with some additional created dataset. The final model have 3.42% CER which is not available publicly.
 
 
 To Train the model from scratch
@@ -89,4 +89,4 @@ With Correction clothed leaf by leaf with the dioappoistmest
 Feel Free to improve this project with pull Request.
 
 
-*This is a work of my last semester project in Computer Engineering at Tribhuvan University. In July of 2019,*
+*This is a work from my last semester project in computer engineering at Tribhuvan University. In July of 2019,*
