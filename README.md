@@ -86,7 +86,20 @@ With Correction clothed leaf by leaf with the dioappoistmest
 * Better Image preprocessing such as: reduce backgoround noise to handle real time image more accurately.
 * Better Decoding approach to improve accuracy. Some of the CTC Decoder found [here](https://github.com/githubharald/CTCDecoder)  
 
+
+# Citation
+If you use any part of this project in your work, please cite:
+
+```bash
+@techreport{Handwritten-Line-text-recognition-using-deep-learning-2019,
+  title={Handwritten Line Text Recognition},
+  author={Gautam Sushant},
+  institution={Tribhuvan University},
+  year={2019}
+}
+
 Feel Free to improve this project with pull Request.
+
 
 
 *This is a work from my last semester project in computer engineering at Tribhuvan University. In July of 2019,*
