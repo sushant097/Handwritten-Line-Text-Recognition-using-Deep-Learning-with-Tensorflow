@@ -82,8 +82,8 @@ With Correction clothed leaf by leaf with the dioappoistmest
 <i>See the project [Devnagari Handwritten Word Recognition with Deep Learning](https://github.com/sushant097/Devnagari-Handwritten-Word-Recongition-with-Deep-Learning) for more insights.</i>
 # Further Improvement
 * Using MDLSTM to recognize whole paragraph at once [Scan, Attend and Read: End-to-End Handwritten Paragraph Recognition with MDLSTM Attention](https://arxiv.org/abs/1604.03286)
-* Line segementation can be added for full paragraph text recognition. For line segmentation you can use A* path planning algorithm or CNN model to seperate paragraph into lines.
-* Better Image preprocessing such as: reduce backgoround noise to handle real time image more accurately.
+* Line segmentation can be added for full paragraph text recognition. To segment a paragraph into lines, you can use an A* path planning algorithm or CNN model.
+* Better Image preprocessing, such as: reducing background noise to handle real-time images more accurately.
 * Better Decoding approach to improve accuracy. Some of the CTC Decoder found [here](https://github.com/githubharald/CTCDecoder)  
 
 
@@ -98,8 +98,8 @@ If you use any part of this project in your work, please cite:
   year={2019}
 }
 ```
-Feel Free to improve this project with pull Request.
+Feel Free to improve this project with a pull Request.
 
 
 
-*This is a work from my last semester project in computer engineering at Tribhuvan University. In July of 2019,*
+* This is a work from my  undergraduate thesis in computer engineering at Tribhuvan University in 2019.
